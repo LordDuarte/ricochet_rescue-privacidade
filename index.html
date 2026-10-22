@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ricochet Rescue - Política de Privacidade</title>
+<style>
+  :root { --bg:#fbf7ef; --fg:#2a1d14; --muted:#6b5a4b; --accent:#8a4b1f; --line:#e3d7c3; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d1612; --fg:#f1e6d6; --muted:#b8a58f; --accent:#e0a35c; --line:#3a2d23; --card:#271e18; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { margin:8px 0 4px; font-size:1.7rem; }
+  h2 { margin:32px 0 8px; font-size:1.2rem; color:var(--accent); }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); font-size:.92rem; }
+  nav { display:flex; gap:8px; margin:16px 0 8px; flex-wrap:wrap; }
+  nav button { background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:8px 16px; font:inherit; cursor:pointer; }
+  nav button[aria-pressed="true"] { background:var(--accent); color:#fff; border-color:var(--accent); }
+  section.lang { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:8px 20px 20px; margin-top:12px; }
+  table { border-collapse:collapse; width:100%; margin:8px 0; font-size:.95rem; }
+  th, td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:rgba(138,75,31,.12); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ricochet Rescue</h1>
+  <p class="muted">Lord Lima &middot; 22/10/2026</p>
+  <nav aria-label="Language">
+    <button data-lang="pt" aria-pressed="true">Português</button>
+    <button data-lang="en" aria-pressed="false">English</button>
+    <button data-lang="es" aria-pressed="false">Español</button>
+  </nav>
+
+  <!-- ===================== PORTUGUÊS ===================== -->
+  <section class="lang" id="pt" lang="pt-BR">
+    <h2>Política de Privacidade</h2>
+    <p>Esta política explica quais informações o jogo <strong>Ricochet Rescue</strong> (&ldquo;jogo&rdquo;), da <strong>Lord Lima</strong> (&ldquo;nós&rdquo;), coleta, como usa e quais são as suas escolhas. Ao jogar, você concorda com ela.</p>
+
+    <h2>1. Quem somos e contato</h2>
+    <p>Desenvolvedor: Lord Lima. Para dúvidas, pedidos sobre seus dados ou remoção do seu nome do ranking, escreva para <strong>[SEU E-MAIL DE CONTATO]</strong>.</p>
+
+    <h2>2. O que coletamos</h2>
+    <p>Não pedimos nome, e-mail, telefone nem criamos conta com os seus dados pessoais. O jogo coleta apenas:</p>
+    <table>
+      <tr><th>Informação</th><th>Para quê</th></tr>
+      <tr><td><strong>Progresso do jogo</strong> (fases, estrelas, dinheiro, energia, personagens, configurações). Fica salvo <em>no seu aparelho</em>.</td><td>Para o jogo funcionar e lembrar de onde você parou.</td></tr>
+      <tr><td><strong>Identificador anônimo</strong> (Firebase Authentication, login anônimo) e um nome público gerado pelo jogo, como &ldquo;Jogador1234&rdquo;.</td><td>Ranking por fase: guardamos seu nome público e seu melhor tempo em cada fase. <strong>Essas duas informações aparecem para outros jogadores.</strong></td></tr>
+      <tr><td><strong>Dados de uso e do aparelho</strong> (Google Analytics para Firebase): eventos como fase iniciada, vencida ou perdida, anúncio visto, compra, idioma; modelo do aparelho, versão do Android, país/região aproximada, identificador do app e do aparelho.</td><td>Entender quais fases são difíceis, corrigir erros e melhorar o jogo.</td></tr>
+      <tr><td><strong>Dados de anúncios</strong> (Unity LevelPlay e redes de anúncios parceiras): identificador de publicidade do aparelho, endereço IP, dados do aparelho e interações com os anúncios.</td><td>Mostrar anúncios, medir resultados e, se você aceitar, personalizá-los.</td></tr>
+      <tr><td><strong>Compra no aplicativo</strong> (Google Play): recebemos a confirmação de que a compra &ldquo;Sem anúncios&rdquo; foi feita. Seus dados de pagamento ficam com a Google; nós não os recebemos.</td><td>Liberar o que você comprou e restaurar a compra em outro aparelho.</td></tr>
+    </table>
+
+    <h2>3. Anúncios e a sua escolha</h2>
+    <p>O jogo é gratuito e mostra anúncios. Na primeira abertura, perguntamos se você <strong>aceita</strong> ou <strong>recusa</strong> anúncios personalizados:</p>
+    <ul>
+      <li><strong>Aceitar:</strong> os anúncios podem ser personalizados com base no identificador de publicidade e em dados do aparelho.</li>
+      <li><strong>Recusar:</strong> os anúncios continuam, mas sem personalização, e informamos às redes de anúncios que você não quer a venda ou o compartilhamento dos seus dados (opt-out, como na CCPA).</li>
+    </ul>
+    <p>Você pode mudar essa escolha a qualquer momento em <strong>Opções &rarr; Privacidade</strong>. Você também pode redefinir ou limitar o identificador de publicidade nas configurações do Android (Google &rarr; Anúncios).</p>
+    <p>Quem compra <strong>&ldquo;Sem anúncios&rdquo;</strong> deixa de ver anúncios, e o SDK de anúncios não é iniciado.</p>
+
+    <h2>4. Serviços de terceiros</h2>
+    <p>Usamos serviços que têm as próprias políticas de privacidade:</p>
+    <ul>
+      <li>Google Firebase (Analytics, Authentication, Cloud Firestore): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Google Play Services e Google Play Billing: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Unity LevelPlay e suas redes de anúncios parceiras: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></li>
+    </ul>
+    <p>Não vendemos seus dados pessoais a ninguém. Os dados compartilhados com as redes de anúncios servem apenas para exibir e medir anúncios, conforme a sua escolha acima.</p>
+
+    <h2>5. Crianças</h2>
+    <p>O jogo não é direcionado a crianças menores de 13 anos e não coleta intencionalmente dados dessa faixa etária. Se você acredita que uma criança nos enviou dados, fale conosco para removermos.</p>
+
+    <h2>6. Por quanto tempo guardamos</h2>
+    <p>O progresso fica no seu aparelho até você apagar os dados ou desinstalar o jogo. O nome público e o melhor tempo no ranking ficam enquanto o ranking existir ou até você pedir a remoção. Os dados de uso seguem os prazos de retenção do Google Analytics (padrão de até 14 meses).</p>
+
+    <h2>7. Seus direitos</h2>
+    <p>Conforme a LGPD (Brasil), o GDPR (Europa) e leis semelhantes, você pode pedir acesso, correção ou exclusão dos seus dados, retirar o consentimento e se opor ao uso. Envie o pedido para o e-mail acima, informando o seu <strong>nome público do ranking</strong> (por exemplo, &ldquo;Jogador1234&rdquo;) para localizarmos o registro. Você também pode apagar os dados do jogo nas configurações do Android.</p>
+
+    <h2>8. Segurança</h2>
+    <p>Usamos serviços do Google com conexão criptografada e regras de acesso, de modo que cada jogador só altera o próprio registro no ranking. Nenhum sistema é totalmente seguro, mas trabalhamos para proteger as informações.</p>
+
+    <h2>9. Mudanças nesta política</h2>
+    <p>Podemos atualizar esta política. A data no topo da página mostra a última revisão. Mudanças relevantes serão informadas no jogo ou na loja.</p>
+  </section>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section class="lang" id="en" lang="en" hidden>
+    <h2>Privacy Policy</h2>
+    <p>This policy explains what information the game <strong>Ricochet Rescue</strong> (the &ldquo;game&rdquo;), by <strong>Lord Lima</strong> (&ldquo;we&rdquo;), collects, how we use it, and the choices you have. By playing, you agree to it.</p>
+
+    <h2>1. Who we are and contact</h2>
+    <p>Developer: Lord Lima. For questions, requests about your data, or removal of your name from the leaderboard, write to <strong>[YOUR CONTACT E-MAIL]</strong>.</p>
+
+    <h2>2. What we collect</h2>
+    <p>We do not ask for your name, e-mail or phone number, and we do not create an account with your personal data. The game only collects:</p>
+    <table>
+      <tr><th>Information</th><th>Purpose</th></tr>
+      <tr><td><strong>Game progress</strong> (levels, stars, money, energy, characters, settings). Stored <em>on your device</em>.</td><td>To make the game work and remember where you stopped.</td></tr>
+      <tr><td><strong>Anonymous identifier</strong> (Firebase Authentication, anonymous sign-in) and a public name generated by the game, such as &ldquo;Jogador1234&rdquo;.</td><td>Per-level leaderboard: we store your public name and your best time on each level. <strong>These two items are visible to other players.</strong></td></tr>
+      <tr><td><strong>Usage and device data</strong> (Google Analytics for Firebase): events such as level started, won or lost, ad watched, purchase, language; device model, Android version, approximate country/region, app and device identifiers.</td><td>To understand which levels are hard, fix errors and improve the game.</td></tr>
+      <tr><td><strong>Ad data</strong> (Unity LevelPlay and partner ad networks): the device advertising ID, IP address, device data and ad interactions.</td><td>To show ads, measure results and, if you accept, personalize them.</td></tr>
+      <tr><td><strong>In-app purchase</strong> (Google Play): we receive confirmation that the &ldquo;No Ads&rdquo; purchase was made. Your payment details stay with Google; we do not receive them.</td><td>To unlock what you bought and restore the purchase on another device.</td></tr>
+    </table>
+
+    <h2>3. Ads and your choice</h2>
+    <p>The game is free and shows ads. On first launch we ask whether you <strong>accept</strong> or <strong>decline</strong> personalized ads:</p>
+    <ul>
+      <li><strong>Accept:</strong> ads may be personalized using the advertising ID and device data.</li>
+      <li><strong>Decline:</strong> ads still appear, but without personalization, and we signal to ad networks that you do not want your data sold or shared (opt-out, as under the CCPA).</li>
+    </ul>
+    <p>You can change this at any time in <strong>Settings &rarr; Privacy</strong>. You can also reset or limit the advertising ID in Android settings (Google &rarr; Ads).</p>
+    <p>Players who buy <strong>&ldquo;No Ads&rdquo;</strong> no longer see ads, and the ad SDK is not started.</p>
+
+    <h2>4. Third-party services</h2>
+    <p>We use services that have their own privacy policies:</p>
+    <ul>
+      <li>Google Firebase (Analytics, Authentication, Cloud Firestore): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Google Play Services and Google Play Billing: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Unity LevelPlay and its partner ad networks: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></li>
+    </ul>
+    <p>We do not sell your personal data to anyone. Data shared with ad networks is used only to display and measure ads, according to your choice above.</p>
+
+    <h2>5. Children</h2>
+    <p>The game is not directed to children under 13 and does not knowingly collect data from them. If you believe a child has sent us data, contact us so we can remove it.</p>
+
+    <h2>6. How long we keep data</h2>
+    <p>Progress stays on your device until you clear the data or uninstall the game. The public name and best time stay on the leaderboard while it exists or until you request removal. Usage data follows Google Analytics retention periods (default up to 14 months).</p>
+
+    <h2>7. Your rights</h2>
+    <p>Under the LGPD (Brazil), the GDPR (Europe) and similar laws, you may request access, correction or deletion of your data, withdraw consent and object to its use. Send your request to the e-mail above with your <strong>public leaderboard name</strong> (for example, &ldquo;Jogador1234&rdquo;) so we can find your record. You can also clear the game data in Android settings.</p>
+
+    <h2>8. Security</h2>
+    <p>We use Google services with encrypted connections and access rules so that each player can only change their own leaderboard entry. No system is completely secure, but we work to protect the information.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy. The date at the top of the page shows the last revision. Relevant changes will be announced in the game or the store.</p>
+  </section>
+
+  <!-- ===================== ESPAÑOL ===================== -->
+  <section class="lang" id="es" lang="es" hidden>
+    <h2>Política de Privacidad</h2>
+    <p>Esta política explica qué información recopila el juego <strong>Ricochet Rescue</strong> (el &ldquo;juego&rdquo;), de <strong>Lord Lima</strong> (&ldquo;nosotros&rdquo;), cómo la usamos y qué opciones tienes. Al jugar, aceptas esta política.</p>
+
+    <h2>1. Quiénes somos y contacto</h2>
+    <p>Desarrollador: Lord Lima. Para dudas, solicitudes sobre tus datos o para quitar tu nombre de la clasificación, escribe a <strong>[TU CORREO DE CONTACTO]</strong>.</p>
+
+    <h2>2. Qué recopilamos</h2>
+    <p>No pedimos nombre, correo ni teléfono, y no creamos una cuenta con tus datos personales. El juego solo recopila:</p>
+    <table>
+      <tr><th>Información</th><th>Para qué</th></tr>
+      <tr><td><strong>Progreso del juego</strong> (niveles, estrellas, dinero, energía, personajes, ajustes). Se guarda <em>en tu dispositivo</em>.</td><td>Para que el juego funcione y recuerde dónde lo dejaste.</td></tr>
+      <tr><td><strong>Identificador anónimo</strong> (Firebase Authentication, acceso anónimo) y un nombre público generado por el juego, como &ldquo;Jogador1234&rdquo;.</td><td>Clasificación por nivel: guardamos tu nombre público y tu mejor tiempo en cada nivel. <strong>Estos dos datos son visibles para otros jugadores.</strong></td></tr>
+      <tr><td><strong>Datos de uso y del dispositivo</strong> (Google Analytics para Firebase): eventos como nivel iniciado, ganado o perdido, anuncio visto, compra, idioma; modelo del dispositivo, versión de Android, país/región aproximada, identificadores de la app y del dispositivo.</td><td>Entender qué niveles son difíciles, corregir errores y mejorar el juego.</td></tr>
+      <tr><td><strong>Datos de anuncios</strong> (Unity LevelPlay y redes de anuncios asociadas): identificador de publicidad del dispositivo, dirección IP, datos del dispositivo e interacciones con los anuncios.</td><td>Mostrar anuncios, medir resultados y, si aceptas, personalizarlos.</td></tr>
+      <tr><td><strong>Compra dentro de la app</strong> (Google Play): recibimos la confirmación de que se hizo la compra &ldquo;Sin anuncios&rdquo;. Tus datos de pago quedan con Google; nosotros no los recibimos.</td><td>Activar lo que compraste y restaurar la compra en otro dispositivo.</td></tr>
+    </table>
+
+    <h2>3. Anuncios y tu elección</h2>
+    <p>El juego es gratuito y muestra anuncios. En la primera apertura preguntamos si <strong>aceptas</strong> o <strong>rechazas</strong> los anuncios personalizados:</p>
+    <ul>
+      <li><strong>Aceptar:</strong> los anuncios pueden personalizarse con el identificador de publicidad y datos del dispositivo.</li>
+      <li><strong>Rechazar:</strong> los anuncios siguen apareciendo, pero sin personalización, e indicamos a las redes de anuncios que no quieres la venta ni el uso compartido de tus datos (opt-out, como en la CCPA).</li>
+    </ul>
+    <p>Puedes cambiar esta elección cuando quieras en <strong>Ajustes &rarr; Privacidad</strong>. También puedes restablecer o limitar el identificador de publicidad en los ajustes de Android (Google &rarr; Anuncios).</p>
+    <p>Quien compra <strong>&ldquo;Sin anuncios&rdquo;</strong> deja de ver anuncios y el SDK de anuncios no se inicia.</p>
+
+    <h2>4. Servicios de terceros</h2>
+    <p>Usamos servicios que tienen sus propias políticas de privacidad:</p>
+    <ul>
+      <li>Google Firebase (Analytics, Authentication, Cloud Firestore): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Google Play Services y Google Play Billing: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Unity LevelPlay y sus redes de anuncios asociadas: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></li>
+    </ul>
+    <p>No vendemos tus datos personales a nadie. Los datos compartidos con las redes de anuncios solo sirven para mostrar y medir anuncios, según tu elección anterior.</p>
+
+    <h2>5. Menores</h2>
+    <p>El juego no está dirigido a menores de 13 años y no recopila datos de ellos de forma intencionada. Si crees que un menor nos envió datos, contáctanos para eliminarlos.</p>
+
+    <h2>6. Cuánto tiempo conservamos los datos</h2>
+    <p>El progreso queda en tu dispositivo hasta que borres los datos o desinstales el juego. El nombre público y el mejor tiempo permanecen en la clasificación mientras exista o hasta que pidas su eliminación. Los datos de uso siguen los plazos de retención de Google Analytics (por defecto, hasta 14 meses).</p>
+
+    <h2>7. Tus derechos</h2>
+    <p>Según la LGPD (Brasil), el RGPD (Europa) y leyes similares, puedes pedir acceso, corrección o eliminación de tus datos, retirar tu consentimiento y oponerte a su uso. Envía tu solicitud al correo indicado, con tu <strong>nombre público de la clasificación</strong> (por ejemplo, &ldquo;Jogador1234&rdquo;) para que podamos localizar tu registro. También puedes borrar los datos del juego en los ajustes de Android.</p>
+
+    <h2>8. Seguridad</h2>
+    <p>Usamos servicios de Google con conexión cifrada y reglas de acceso, de modo que cada jugador solo puede modificar su propio registro en la clasificación. Ningún sistema es totalmente seguro, pero trabajamos para proteger la información.</p>
+
+    <h2>9. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política. La fecha al inicio de la página indica la última revisión. Los cambios relevantes se informarán en el juego o en la tienda.</p>
+  </section>
+</main>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('nav button');
+    var sections = document.querySelectorAll('section.lang');
+    function show(lang) {
+      sections.forEach(function (s) { s.hidden = s.id !== lang; });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'); });
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var nav = (navigator.language || 'pt').slice(0, 2);
+    show(nav === 'en' || nav === 'es' ? nav : 'pt');
+  })();
+</script>
+<noscript><style>section.lang[hidden] { display:block; }</style></noscript>
+</body>
+</html>
